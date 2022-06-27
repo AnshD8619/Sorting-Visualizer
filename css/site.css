@@ -56,3 +56,29 @@ main>.container {
     bottom: 0;
     width: 100%;
 }
+
+.bars{
+    display: flex;
+    flex-direction: row;
+}
+
+.bar{
+    width: 20px;
+    background-color: rgb(4, 40, 82);
+    margin: 2px;
+    transition: height ease-in-out 0.5s;
+}
+
+.buttons > button, select{
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(4, 40, 82);
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.2s ease-in-out;
+    display: inline;
+}
