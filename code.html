@@ -256,9 +256,37 @@ async function mergeSort(unsorted, speed)
                     </pre>
                 </div>
                 <div class="col-lg-4">
-                    <p>HOW IS THE CODE STRUCTURED</p>
-                    <h5>FUNCTION NAME</h5>
-                    <p>FUNCTION DESCRIPTION</p>
+                    <h5 font="">Code Structure</h5>
+                    <h5>randomize()</h5>
+                    <p>This function gets the array size, and bars div from the page. 
+                    It resets the bars everytime the randomize button is clicked and ensures that the bars from previous sorts are erased.
+                    It gets a random number between 0 and 400, and adds a bar whose height is 1.75 * the random number + 100 px.
+                    It creates these bars until the number of bars = array size and sets the global variable unsorted to the randomized array </p>
+
+                    <h5>sort()</h5>
+                    <p>This function gets the selected sort and speed from the page. 
+                    The selected sort is used as a switch to decide which sorting function to use</p>
+
+                    <h5>sleep()</h5>
+                    <p>This function halts the program for the indicated speed value</p>
+
+                    <h5>bubbleSort()</h5>
+                    <p>This function runs the bubble sort on the randomized array. 
+                    The bubble sort compares adjacent indexes and if the first index is greater than the second index, 
+                    it switches the two indexes. The switched index bars are colored lightgreen. 
+                    After each loop of comparisons, the value at the last index is at its final position</p>
+
+                    <h5>insertionSort()</h5>
+                    <p>This function runs the insertion sort on the randomized array. 
+                    It iterates over the array from the first to the alst index, and compares the key to the index before it.
+                    When the key element is smaller, it moves the greater elements up one index, and inserts the key into the correct location. 
+                    The compared indexes are colored lightgreen</p>
+
+                    <h5>mergeSort()</h5>
+                    <p>This function runs a merge sort on the randomized array.
+                    It recursively calls itself until the length of the passed array is 1. 
+                    It then runs the merge sort on each array passed, splitting them into halfs and sorting each half until the entire array is finally sorted.
+                    The left half is colored lightgreen and the right half is colored yellow</p>
                 </div>               
             </div>
         </div>
